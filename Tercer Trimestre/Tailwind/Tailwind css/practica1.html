@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Ratio - Tailwind CSS</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="p-4 bg-gray-200">
+    <h1 class="text-2xl font-bold mb-4">
+        Ejemplos de Aspect Ratio
+    </h1>
+
+    <!-- aspect-[3/2] -->
+    <img
+        src="https://picsum.photos/600/300"
+        alt="Imagen 3:2"
+        class="aspect-3/2 w-64 object-cover border-4 border-red-500">
+
+    <!-- aspect-auto -->
+    <img
+        src="https://picsum.photos/600/300"
+        alt="Imagen original"
+        class="aspect-auto w-64 border-4 border-blue-500">
+
+    <!-- Video 16:9 -->
+    <div class="w-80">
+        <iframe
+            class="aspect-video w-full"
+            src="https://www.youtube.com/embed/-dqQhVswiEY"
+            title="Video de YouTube"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <h1 class="text-2xl font-bold mb-4">
+        Ejemplo de columns
+    </h1>
+    <h2>columns x3</h2>
+    <!-- columns x3  a lo largo  -->
+    <div class="columns-3 ...">
+        <img class="aspect-3/2 " 
+            src="https://picsum.photos/600/300" />
+        <img class="aspect-square object-cover " 
+            src="https://picsum.photos/600/300" />
+        <img class="aspect-square object-cover "
+            src="https://picsum.photos/600/300" />
+    </div>
+    <h2>columns 3xs</h2>
+
+    <div class="columns-3xs">
+    <img class="aspect-3/2 " src="https://picsum.photos/600/300" />
+    <img class="aspect-square " src="https://picsum.photos/600/300" />
+    <img class="aspect-square " src="https://picsum.photos/600/300" />
+</div>
+<h2>4. display </h2>
+<span class="block bg-blue-200 mb-2">block</span>
+<span class="inline-block bg-red-200">inline-block</span>
+<span class="hidden">no se ve</span>
+<h2>Etapa 2 — Spacing (muy usado)</h2>
+<p>------------------------------
+🔗 padding → https://tailwindcss.com/docs/padding
+🔗 margin → https://tailwindcss.com/docs/margin
+------------------------------</p>
+<div class="p-2 bg-red-200">p-2</div>
+<div class="p-8 bg-blue-200">p-8</div>
+<div class="px-4 py-2 bg-green-200">px-4 py-2</div>
+<h2>Etapa 3 — Typography (muy visual)</h2>
+<p>🔗 https://tailwindcss.com/docs/font-size
+---------------------------------</p>
+<p class="text-xs">Extra small</p>
+<p class="text-sm">Small</p>
+<p class="text-base">Base</p>
+<p class="text-xl">XL</p>
+<p class="text-4xl font-bold">4XL Bold</p>
+<h1>SIZING</h1>
+<p>🔗 https://tailwindcss.com/docs/width
+--------------------------------------</p>
+
+<div class="w-16 h-8 bg-red-300 mb-2">w-16 h-8</div>
+<div class="w-32 h-8 bg-blue-300 mb-2">w-32 h-8</div>
+<div class="w-64 h-8 bg-green-300 mb-2">w-64 h-8</div>
+<div class="w-full h-8 bg-yellow-300 mb-2">w-full</div>
+<div class="w-1/2 h-8 bg-purple-300 mb-2">w-1/2</div>
+
+<h1>BORDERS</h1>
+<p>🔗 https://tailwindcss.com/docs/border-width
+--------------------------------------------------------</p>
+<h2 class="text-lg font-semibold mt-8 mb-2">Borders</h2>
+
+<div class="border p-4 mb-2">border (1px)</div>
+<div class="border-2 border-blue-500 p-4 mb-2">border-2 azul</div>
+<div class="border-4 border-red-500 rounded-xl p-4 mb-2">border-4 redondeado</div>
+<div class="border-4 border-dashed border-green-500 p-4 mb-2">border dashed</div>
+<div class="rounded-full bg-gray-200 w-24 h-24 flex items-center justify-center mb-2">
+</div>
+<h1 class="text-lg font-semibold mt-8 mb-2">
+EFFECTS</h1>
+<p>🔗 https://tailwindcss.com/docs/box-shadow
+-------------------------------------------</p>
+<div class="shadow-sm bg-white p-4 mb-4">shadow-sm</div>
+<div class="shadow-md bg-white p-4 mb-4">shadow-md</div>
+<div class="shadow-xl bg-white p-4 mb-4">shadow-xl</div>
+<div class="shadow-2xl bg-white p-4 mb-4">shadow-2xl</div>
+<div class="opacity-100 bg-blue-500 text-white p-4 mb-2">opacity-100</div>
+<div class="opacity-50 bg-blue-500 text-white p-4 mb-2">opacity-50</div>
+<div class="opacity-25 bg-blue-500 text-white p-4 mb-2">opacity-25</div>
+<h2 class="text-lg font-semibold mt-8 mb-2">Flexbox</h2>
+<p>🔗 https://tailwindcss.com/docs/flex
+---------------------------------------</p>
+<div class="flex justify-between bg-gray-100 p-4 mb-4">
+<div class="bg-blue-400 p-3">1</div>
+<div class="bg-blue-400 p-3">2</div>
+<div class="bg-blue-400 p-3">3</div>
+</div>
+
+<div class="flex justify-center gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-green-400 p-3">1</div>
+<div class="bg-green-400 p-3">2</div>
+<div class="bg-green-400 p-3">3</div>
+</div>
+
+<div class="flex flex-col gap-2 bg-gray-100 p-4 mb-4">
+<div class="bg-red-400 p-3">1</div>
+<div class="bg-red-400 p-3">2</div>
+<div class="bg-red-400 p-3">3</div>
+</div>
+
+<h2 class="text-lg font-semibold mt-8 mb-2">Grid</h2>
+
+<div class="grid grid-cols-2 gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-yellow-400 p-4">1</div>
+<div class="bg-yellow-400 p-4">2</div>
+<div class="bg-yellow-400 p-4">3</div>
+<div class="bg-yellow-400 p-4">4</div>
+</div>
+
+<div class="grid grid-cols-4 gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-purple-400 p-4">1</div>
+<div class="bg-purple-400 p-4">2</div>
+<div class="bg-purple-400 p-4">3</div>
+<div class="bg-purple-400 p-4">4</div>
+</div>
+<h2 class="text-lg font-semibold mt-8 mb-2">Flexbox</h2>
+<p>🔗 https://tailwindcss.com/docs/flex
+---------------------------------------</p>
+<div class="flex justify-between bg-gray-100 p-4 mb-4">
+<div class="bg-blue-400 p-3">1</div>
+<div class="bg-blue-400 p-3">2</div>
+<div class="bg-blue-400 p-3">3</div>
+</div>
+
+<div class="flex justify-center gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-green-400 p-3">1</div>
+<div class="bg-green-400 p-3">2</div>
+<div class="bg-green-400 p-3">3</div>
+</div>
+
+<div class="flex flex-col gap-2 bg-gray-100 p-4 mb-4">
+<div class="bg-red-400 p-3">1</div>
+<div class="bg-red-400 p-3">2</div>
+<div class="bg-red-400 p-3">3</div>
+</div>
+
+<h2 class="text-lg font-semibold mt-8 mb-2">Grid</h2>
+
+<div class="grid grid-cols-2 gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-yellow-400 p-4">1</div>
+<div class="bg-yellow-400 p-4">2</div>
+<div class="bg-yellow-400 p-4">3</div>
+<div class="bg-yellow-400 p-4">4</div>
+</div>
+
+<div class="grid grid-cols-4 gap-4 bg-gray-100 p-4 mb-4">
+<div class="bg-purple-400 p-4">1</div>
+<div class="bg-purple-400 p-4">2</div>
+<div class="bg-purple-400 p-4">3</div>
+<div class="bg-purple-400 p-4">4</div>
+</div>
+
+</body>
+</html>

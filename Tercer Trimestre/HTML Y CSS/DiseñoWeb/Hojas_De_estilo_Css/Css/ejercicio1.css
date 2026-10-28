@@ -1,0 +1,123 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f4f6f9;
+}
+
+/* TITULOS */
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+/* CONTENEDOR BOTONES */
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* CLASE BASE BOTÓN */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+/* PRIMARIO */
+.btn-primario {
+    background-color: goldenrod;
+}
+
+.btn-primario:hover {
+    background-color: white;
+}
+
+.btn-primario:active {
+    transform: scale(0.95);
+}
+
+/*  SECUNDARIO */
+.btn-secundario {
+    background-color: goldenrod;
+}
+
+.btn-secundario:hover {
+    background-color: white;
+}
+
+.btn-secundario:active {
+    transform: scale(0.95);
+}
+
+/*  EXITO */
+.btn-exito {
+    background-color: goldenrod;
+}
+
+.btn-exito:hover {
+    background-color: white;
+}
+
+.btn-exito:active {
+    transform: scale(0.95);
+}
+
+/*  PELIGRO */
+.btn-peligro {
+    background-color: goldenrod;
+}
+
+.btn-peligro:hover {
+    background-color: red
+}
+
+.btn-peligro:active {
+    transform: scale(0.95);
+}
+
+/*  DESHABILITADO */
+.btn-deshabilitado {
+    background-color: goldenrod ;
+    cursor:not-allowed;
+}
+
+.btn-deshabilitado:hover {
+    background-color: grey;
+}
+
+.btn-deshabilitado:active {
+    transform: scale(0.95);
+}
+
+/*  FORMULARIO */
+.formulario-demo {
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/*  EFECTO FOCUS */
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+}

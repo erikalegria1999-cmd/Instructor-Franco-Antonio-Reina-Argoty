@@ -1,0 +1,100 @@
+===============================================================
+Sesión 2 - Instalación de Tailwind profesional con NPM
+===============================================================
+
+1. Requisitos Previos
+
+Verificar que Node.js y npm estén instalados:
+
+node -v
+npm -v
+
+Si muestran una versión, ya puedes continuar.
+
+2. Crear el proyecto
+mkdir mi-proyecto
+cd mi-proyecto
+
+/* crear el archivo package.json */
+-----------------------------------
+npm init -y
+
+3. Instalar Tailwind CSS
+-----------------------------------
+Instalar Tailwind y su CLI como dependencias de desarrollo:
+
+npm install tailwindcss @tailwindcss/cli --save-dev
+
+4. Crear la estructura del proyecto
+mi-proyecto/
+│
+├── src/
+│   └── input.css
+│
+├── dist/
+│
+├── index.html
+├── package.json
+└── node_modules/
+
+Crear el archivo:
+
+src/input.css 
+/*agregar la siguiente línea al archivo*/
+
+@import "tailwindcss";
+--------------------------------------
+5. Configurar scripts en package.json
+
+Agregar en package.json:
+
+"scripts": {
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/styles.css --minify"
+  }
+
+
+6. crear el archivo settings.json dentro de la carpeta .vscode
+------------------------------------------------------
+con esto detecta la actualización de código y se
+recarga automáticamente
+crea la carpeta en la raíz .vscode/settings.json
+
+{
+  "liveServer.settings.watchFiles": [
+    "**/*.html",
+    "**/*.css",
+    "src/*.css"
+  ],
+  "liveServer.settings.fullReload": true
+}
+
+7. Extensiones recomendadas en VS Code
+--------------------------------------
+Tailwind CSS IntelliSense
+
+Proporciona:
+
+Autocompletado de clases.
+Sugerencias inteligentes.
+Validación de sintaxis.
+
+Buscar e instalar:
+
+Tailwind CSS IntelliSense
+(Tailwind Labs)
+
+8. Modo Desarrollo
+============================
+Durante el desarrollo se desea que Tailwind compile automáticamente cada vez que se modifique el CSS o el HTML.
+
+Ejecutar en la terminal:
+
+============================
+npm run dev:css --watch
+============================
+Este comando:
+
+Observa cambios (--watch).
+Genera el archivo:
+src/output.css

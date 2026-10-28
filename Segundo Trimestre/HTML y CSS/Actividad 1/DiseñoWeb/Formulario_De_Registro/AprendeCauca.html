@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro AprendeCauca</title>
+</head>
+<body>
+
+<h1>Registro en AprendeCauca</h1>
+
+<form>
+
+<!-- 1. Datos personales -->
+<fieldset>
+<legend>Datos personales</legend>
+
+<label>Nombre:</label><br>
+<input type="text" name="nombre" required><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Contraseña:</label><br>
+<input type="password" name="password" required minlength="6"><br><br>
+
+<label>Fecha de nacimiento:</label><br>
+<input type="date" name="fecha" required>
+</fieldset>
+
+<br>
+
+<!-- 2. Información académica -->
+<fieldset>
+<legend>Información académica</legend>
+
+<label>Nivel educativo:</label><br>
+<select name="nivel" required>
+    <option value="">Seleccione</option>
+    <option value="secundaria">Secundaria</option>
+    <option value="tecnico">Técnico</option>
+    <option value="universitario">Universitario</option>
+    <option value="posgrado">Posgrado</option>
+</select>
+</fieldset>
+
+<br>
+
+<!-- 3. Área de interés -->
+<fieldset>
+<legend>Área de interés</legend>
+
+<label>
+    <input type="radio" name="interes" value="programacion" required>
+    Programación
+</label><br>
+
+<label>
+    <input type="radio" name="interes" value="diseno">
+    Diseño
+</label><br>
+
+<label>
+    <input type="radio" name="interes" value="marketing">
+    Marketing
+</label>
+</fieldset>
+
+<br>
+
+<!-- 4. Habilidades -->
+<fieldset>
+<legend>Habilidades previas</legend>
+
+<label>
+    <input type="checkbox" name="habilidades[]" value="html">
+    HTML
+</label><br>
+
+<label>
+    <input type="checkbox" name="habilidades[]" value="css">
+    CSS
+</label><br>
+
+<label>
+    <input type="checkbox" name="habilidades[]" value="js">
+    JavaScript
+</label>
+</fieldset>
+
+<br>
+
+<!-- 5. Disponibilidad -->
+<fieldset>
+<legend>Disponibilidad horaria</legend>
+
+<label>Selecciona horarios:</label><br>
+<select name="horario[]" multiple size="3">
+    <option value="manana">Mañana</option>
+    <option value="tarde">Tarde</option>
+    <option value="noche">Noche</option>
+</select>
+</fieldset>
+
+<br>
+
+<!-- 6. Presentación -->
+<fieldset>
+<legend>Sobre ti</legend>
+
+<label>Cuéntanos sobre ti:</label><br>
+<textarea name="descripcion" rows="5" 
+    placeholder="Escribe algo sobre ti..." required></textarea>
+</fieldset>
+
+<br>
+
+<!-- 7. Confirmación -->
+<fieldset>
+<legend>Confirmación</legend>
+
+<label>
+    <input type="checkbox" required>
+    Acepto términos y condiciones
+</label>
+</fieldset>
+
+<br>
+
+<button type="submit">Registrarse</button>
+<button type="reset">Limpiar</button>
+
+</form>
+
+</body>
+</html>

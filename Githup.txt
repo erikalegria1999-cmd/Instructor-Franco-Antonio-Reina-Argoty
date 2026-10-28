@@ -1,0 +1,16 @@
+Crear un proyeto en GITHUB
+
+git init
+git add .
+//para subir el proyecto local
+git commit -m "Este espacio 1,2,3 es del proyecto SistemaRecolector"
+git branch -M main
+git remote add origin https://github.com/Francorey23/Proyectolaravel
+git push -u origin main
+
+Pasos para subir los cambios al repositorio
+-----------------------------------------------------
+git add .
+git commit -m "Este espacio es del proyecto SistemaRecolector"
+git push
+

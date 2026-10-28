@@ -1,0 +1,28 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+
+    "editor.inlineSuggest.showToolbar": "always",
+
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+
+    "css.lint.unknownAtRules": "ignore",
+
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    "tailwindCSS.experimental.configFile": "./src/input.css"
+}

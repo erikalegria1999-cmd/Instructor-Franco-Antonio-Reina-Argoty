@@ -1,0 +1,58 @@
+<!-- Una tienda artesanal quiere un sitio con esta estructura: 
+página principal en la raíz, páginas de categorías en una subcarpeta 
+categorias/, e imágenes en imagenes/. Debes crear los archivos 
+y asegurarte de que los enlaces entre páginas y las imágenes 
+funcionen correctamente con rutas relativas.
+Análisis: Este ejercicio tiene como objetivo principal dominar las rutas 
+../. El error más común es olvidar subir de nivel cuando estás en una 
+subcarpeta.
+Planteamiento: Mapeamos las rutas antes de codificar. 
+Desde categorias/tejidos.html, para acceder a 
+imagenes/mochila.jpg debemos: subir un nivel (../) y luego entrar a 
+imagenes/. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Artesanal</title>
+</head>
+<body>
+<header> <h1 style="color: red;"> <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#EA3323"><path d="m718-327-99-99 42-42 57 56 141-141 42 42-183 184ZM440-497Zm0 376-99-91q-87-80-144.5-137T104-452q-35-46-49.5-86.5T40-625q0-90 60.5-152.5T250-840q57 0 105.5 26.5T440-736q42-54 89-79t101-25q81 0 135.5 55T832-652h-59q-9-55-46.5-91.5T630-780q-51 0-95 31t-71 88h-49q-26-56-70-87.5T250-780q-66 0-108 44.5T100-625q0 39 15.5 76t54 84Q208-418 274-355t166 155q32-29 60.5-54t56.5-49l6.5 6.5q6.5 6.5 14.5 14t14.5 14l6.5 6.5q-27 24-56 49t-62 55l-41 37Z"/></svg> Tienda Artesanal</h1></header>
+    <section>
+        <center>
+        <img src="img/annie-.jpg" width="500"  alt="Artesanias">
+        </center>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="Tejidos.html" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5"><path d="M305-203 72-248q-17-3-26-16.5T40-294q3-17 16.5-26t30.5-6l240 45-22 78Zm38-136L73-413q-16-5-24-19t-3-30q5-17 18.5-25t29.5-3l270 74-21 77ZM110-71q-17-2-28-14.5T73-115q2-17 14.5-27.5T117-151l345 31q29 3 53-13.5t32-44.5l51-185q2-6 1.5-13t-3.5-13l-55-130-5 131-346-180q-15-8-20-24t3-30q8-15 24-20t30 3l234 122 3-70q1-18 9-32t21-23q13-10 28.5-13.5T555-654l17 7 98 227q8 19 9 39t-4 40l-51 185q-16 56-63.5 89T455-40L110-71Zm174-680q13-11 29-9t27 15l80 97q-5 8-8 17t-5 18l-108-56-21-25q-11-13-9.5-29.5T284-751Zm112-125q14-10 30-7t26 17l104 151q-22-5-44 0t-42 16l-84-122q-10-14-7-30t17-25Zm200-40q16-7 31-.5t22 21.5l101 244 46-52q11-12 26-18t32-5q17 2 31 9.5t24 21.5l11 16-72 237q-6 20-18 36.5T801-378l-66 44q5-23 4-47t-9-47l26-16q6-4 9.5-9.5T771-466l41-134-88 97-149-361q-6-15 0-30.5t21-21.5ZM443-288Zm281-215Z"/></svg>
+                Tejidos y Mochilas</a>
+            </li>
+            <li><a href="Ceramica.html" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5"><path d="M160-80v-200q81-65 122-141t58-139h-20q-33 0-56.5-23.5T240-640v-240h200v120h80v-120h200v240q0 33-23.5 56.5T640-560h-21q17 63 58 139t123 141v200H160Zm80-80h480v-83q-86-78-126.5-163.5T536-560H423q-16 68-57 153.5T240-243v83Zm80-480h320v-160h-40v120H360v-120h-40v160Zm160 480ZM320-640h320-320Z"/></svg>
+                Ceramica y Alfareria</a>
+            </li>
+            <li>
+                <a href="https://www.mincultura.gov.co/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5"><path d="M440-80v-167q-42 27-86.5 47T260-180q-63 0-118.5-28.5T40-280q37-34 79.5-59.5T211-375q-68-55-100-136T79-680q72 1 139 23t122 65v-8q0-91 40.5-171T480-920q58 69 99 149t41 171q0 2-.5 4t-.5 4q56-43 123-64.5T881-680q0 88-32.5 169T748-375q49 10 91.5 35.5T919-280q-46 43-101 71.5T700-180q-50 0-94.5-20T520-247v167h-80Zm-56-296q-11-38-28.5-72.5T310-510q-28-28-62.5-45.5T175-584q11 38 28.5 72.5T249-449q27 28 62 45.5t73 27.5ZM260-260q21 0 41-5.5t39-14.5q-19-8-39-14t-41-6q-21 0-41 6t-40 14q19 9 39.5 14.5T260-260Zm220-152q26-44 43-90.5t17-97.5q0-51-17-97.5T480-787q-26 43-43 89.5T420-600q0 51 17 98t43 90Zm96 36q38-10 72.5-27.5T710-449q28-28 45.5-62.5T784-584q-38 11-72.5 28.5T649-510q-28 27-45.5 61.5T576-376Zm124 116q21 0 41-5.5t39-14.5q-19-8-39-14t-41-6q-21 0-41 6t-40 14q19 9 39.5 14.5T700-260ZM384-376Zm-44 96Zm140-132Zm96 36Zm43 96Z"/></svg>
+                    Ministerio de Cultura
+                </a>
+            </li>   
+            <li><a href="Acercade.html" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM247-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47Zm466 0q-47 47-113 47-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113q0 66-47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q440-607 440-640t-23.5-56.5Q393-720 360-720t-56.5 23.5Q280-673 280-640t23.5 56.5Q327-560 360-560t56.5-23.5ZM360-240Zm0-400Z"/></svg>
+                Quienes Somos</a>
+            </li>
+            <li>
+                <a href="Cuestionario.html"> Forum</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+</body>
+</html>

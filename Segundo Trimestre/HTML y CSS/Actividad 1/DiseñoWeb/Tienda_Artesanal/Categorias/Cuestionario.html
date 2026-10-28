@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Incripcion a Forum Empresarial Cauca 2026</h1>
+    </header>
+    <section>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos Participante</legend>
+                <p>
+                    <label for="Nombres"> Nombre:</label><br>
+                    <input type="text" id="Nombres" name="Nombres" required>
+                </p>
+                <p>
+                    <label for="Apellido"> Apellido:</label><br>
+                    <input type="text" id="Apellido" name="Apellido" required>
+                </p>
+                <p>
+                    <label for="Cedula"> Cc</label><br>
+                    <input type="number" id="Cedula" name="Cedula" required>
+                </p>
+                <p>
+                    <label for="Cargo"> Cargo:</label><br>
+                    <input type="text" id="Cargo" name="Cargo" required>
+                </p>
+                <p>
+                    <label for="Email"> Email:</label><br>
+                    <input type="email" id="Email" name="Email" required>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Informacion de la empresa</legend>
+                <p>
+                    <label for="empresa"> Nombre de la empresa:</label><br>
+                    <input type="text" id = "empresa" name="empresa" required>
+                </p>
+                <p><strong>Sectores economicos(puedo seleccionar varios):</strong></p>
+                <!-- uso del checkbox-->
+                <label >
+                    <input type="checkbox" name="sector[]" value="agro">Agropecuario
+                </label><br>
+                <label >
+                    <input type="checkbox" name="sector[]" value="turismo">Turismo
+                </label><br>
+                <label >
+                    <input type="checkbox" name="sector[]" value="comercio">Comercio
+                </label><br>                  
+            </fieldset>
+            <!-- taller de interes-->
+            <fieldset>            
+            <legend>Taller de interes</legend>
+            <p><label>
+                    <input type="radio" name="taller" value="marketing" required>
+                    marketing digital para Pymes
+                </label><br>
+                <label>
+                    <input type="radio" name="taller" value="exportacion" required>
+                    Exportacion e importacion de activos
+                </label><br>
+                <label>
+                    <input type="radio" name="taller" value="liderazgo" required>
+                    liderazgo y gestion de equipo
+                </label><br>
+            </p>
+            
+        </fieldset>
+        <!-- informacion adicional-->
+        <fieldset>
+            <legend>
+                <p>
+                    <label for="talla">Talla camiseta del evento:</label><br>
+                    <select name="talla" id="talla">
+                        <option value="xs">XS Extra pequeña</option>
+                        <option value="s">Pequeña</option>
+                        <option value="m" selected>M mediana </option>
+                        <option value="l">Grande</option>
+                        <option value="xl"> XL Extra Grande</option>
+                    </select>
+                </p>
+            </legend>
+        
+        <label for="restricciones">Restricciones Alimentarias:</label>
+        <textarea name="restricciones" id="restricciones" rows="5" placeholder="Ej. vegetariano, organico, proteinas">
+        Restricciones
+        </textarea>
+        </fieldset>
+        <p>
+            <label>
+                <input type="checkbox" required >
+                Autorizo  el tratamiento de mis datos personales
+            </label>
+        </p>
+        <button type="submit">confirmar inscripcion</button>
+        <button type="reset"> Limpiar Formulario</button>
+    </form>
+    </section>
+</body>
+</html>

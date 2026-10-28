@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    padding: 1rem;
+    }
+
+h1{
+    padding: 0.4rem 0.8rem;
+    margin: 1.5rem 0.5rem;
+    font-size: 1rem;
+}
+h2{
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0.8rem 0.3rem;
+}
+.demo-sin-flex{
+    border: 1px dashed #999;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+.item{
+    border: 1px solid #333;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+/* contenedor e items*/
+.demo-sin-flex{
+    display: block;
+
+}
+.demo-con-flex{
+    display: flex;
+    gap: 0.3rem;
+}
+/*flex-direction*/
+.flex-row{
+    display: flex;
+    flex-direction: row; /*izquierda*/
+    }
+.flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse; /* derecha*/
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 200px;
+    background-color:antiquewhite ;
+    color: cadetblue ;
+}
+.flex-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.3rem;
+    width: 200px;
+    background-color: antiquewhite;
+    color: cadetblue;
+}
+/*propiedades de contenedor*/
+.flex-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 250px;
+    overflow: scroll;
+
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+/*justificacion contenido*/
+.jc-flex-start{
+    display: flex;
+    justify-content: flex-start; /*pone al inicio*/
+    width: 250px;
+}
+.jc-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.jc-center{
+    display: flex;
+    justify-content: center ;
+}
+.jc-space-between{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.jc-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.jc-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*align items*/
+.ai-stretch{
+    display: flex;
+    align-items: stretch;
+    height: 80px;
+    gap: 0.3rem;
+}
+.ai-flex-start{
+    display: flex;
+    align-items: flex-start;
+    height: 120px;
+    gap: 0.3rem;
+}
+.ai-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+/*6.3 gap*/
+.gap-pequeno{
+    display: flex;
+    gap: 0.5rem;
+}
+.gap-grande{
+    display: flex;
+    gap: 2rem;
+}
+.gap-ejes{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    width: 280px;
+}
+/*6.4 flex-grow*/
+.demo-grow{
+    display: flex;
+    gap: 0.3rem;
+}
+.grow-0{
+    flex-grow:0; /* no crece solo ocupa su contenido*/
+}
+.grow-1{
+flex-grow:1;/*crece 1 en el espacio libre*/
+}
+.grow-2{
+flex-grow:2; /* crece el doble de grow 1*/
+}
+/* shrink*/
+.demo-shrink{
+    display: flex;
+    gap: 0.3rem;
+    width: 350px;
+}
+.shrink-1{
+flex-shrink: 0; /* puede encoge*/
+width: 200px;
+}
+.shrink-0{
+    flex-shrink: 1; /* 0 no puede encoger o mantiene el tamaño*/
+    width: 200px;
+}

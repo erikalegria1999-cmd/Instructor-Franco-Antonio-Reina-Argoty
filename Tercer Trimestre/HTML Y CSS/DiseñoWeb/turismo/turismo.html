@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<title>Descubre el Cauca</title> 
+<link rel="stylesheet" href="css/estilo.css" /> 
+</head> 
+<body> 
+
+<!-- BARRA DE NAVEGACIÓN --> 
+<nav id="barra-nav"> 
+    <a href="#inicio" class="nav-logo">🗺️ Descubre el Cauca</a> 
+    <ul class="nav-menu"> 
+    <li><a href="#inicio">Inicio</a></li> 
+    <li><a href="#destinos">Destinos</a></li> 
+    <li><a href="#contacto">Contacto</a></li> 
+    <li class="nav-cta"><a href="#contacto">Reservar</a></li> 
+    </ul> 
+</nav> 
+
+<!-- HERO --> 
+<div id="inicio" class="hero"> 
+    <h1 class="hero-titulo">El Cauca te espera</h1> 
+    <p class="hero-subtitulo"> 
+    Naturaleza, historia y cultura en el corazón de Colombia 
+    </p> 
+    <a href="#destinos" class="btn-primario">Ver destinos</a> 
+</div> 
+
+<!-- SECCIÓN DE DESTINOS --> 
+<section id="destinos" class="seccion"> 
+    <h2 class="seccion-titulo">Destinos destacados</h2> 
+    <p class="seccion-descripcion"> 
+    Tres lugares que no puedes dejar de visitar en el Cauca 
+    </p> 
+    <div class="contenedor-cards"> 
+
+    <div class="card"> 
+        <img src="img/popayan.jpg.jpg" alt="Ciudad de Popayán" class="card-img" /> 
+        <div class="card-cuerpo"> 
+        <span class="card-etiqueta">Ciudad</span> 
+        <h3 class="card-titulo">Popayán</h3> 
+        <p class="card-texto"> 
+            La Ciudad Blanca de Colombia. Arquitectura colonial, 
+            gastronomía tradicional y Semana Santa Patrimonio de la Humanidad. 
+        </p> 
+        <a href="#contacto" class="btn-secundario">Más información</a> 
+        </div> 
+    </div> 
+    <div class="card"> 
+        <img src="img/san-agustin.jpg.jpg" alt="Parque San Agustín" class="card-img" /> 
+        <div class="card-cuerpo"> 
+        <span class="card-etiqueta">Arqueología</span> 
+        <h3 class="card-titulo">San Agustín</h3> 
+        <p class="card-texto"> 
+            Parque Arqueológico Patrimonio de la Humanidad UNESCO. 
+            Más de 500 esculturas precolombinas en 78 km². 
+        </p> 
+        <a href="#contacto" class="btn-secundario">Más información</a> 
+        </div> 
+    </div> 
+    <div class="card"> 
+        <img src="img/gorgona.jpg.jpg" alt="Isla Gorgona" class="card-img" /> 
+        <div class="card-cuerpo"> 
+        <span class="card-etiqueta">Naturaleza</span> 
+        <h3 class="card-titulo">Isla Gorgona</h3> 
+        <p class="card-texto"> 
+            Reserva natural única en el Pacífico colombiano. 
+            Santuario de ballenas jorobadas de julio a noviembre. 
+        </p> 
+        <a href="#contacto" class="btn-secundario">Más información</a> 
+        </div> 
+    </div> 
+
+    </div> 
+</section> 
+<!-- TABLA DE TEMPORADAS --> 
+<section class="seccion seccion-gris"> 
+    <h2 class="seccion-titulo">Temporadas recomendadas</h2> 
+    <table class="tabla-temporadas"> 
+    <thead> 
+        <tr> 
+        <th>Destino</th> 
+        <th>Mejor época</th> 
+        <th>Temperatura</th> 
+        <th>Actividad principal</th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr> 
+        <td>Popayán</td> 
+        <td>Todo el año</td> 
+        <td>18°C promedio</td> 
+        <td>Turismo cultural</td> 
+        </tr> 
+        <tr> 
+        <td>San Agustín</td> 
+        <td>Diciembre – Febrero</td> 
+        <td>18°C promedio</td> 
+        <td>Senderismo arqueológico</td> 
+        </tr> 
+        <tr> 
+        <td>Isla Gorgona</td> 
+        <td>Julio – Noviembre</td> 
+        <td>28°C promedio</td> 
+        <td>Avistamiento de ballenas</td> 
+        </tr> 
+    </tbody> 
+    </table> 
+</section> 
+
+<!-- FORMULARIO DE CONTACTO --> 
+<section id="contacto" class="seccion"> 
+    <h2 class="seccion-titulo">Planea tu viaje</h2> 
+    <p class="seccion-descripcion"> 
+    Completa el formulario y te contactamos en 24 horas 
+    </p> 
+
+    <form class="formulario"> 
+
+    <div class="campo"> 
+        <label for="nombre">Nombre completo</label> 
+        <input type="text" id="nombre" name="nombre" 
+        placeholder="Ej: Carolina Muñoz" /> 
+    </div> 
+
+    <div class="campo"> 
+        <label for="email">Correo electrónico</label> 
+        <input type="email" id="email" name="email" 
+            placeholder="tucorreo@ejemplo.com" /> 
+    </div> 
+    <div class="campo"> 
+        <label for="destino">Destino de interés</label> 
+        <select id="destino" name="destino"> 
+        <option value="">-- Selecciona un destino --</option> 
+        <option value="popayan">Popayán</option> 
+        <option value="san-agustin">San Agustín</option> 
+        <option value="gorgona">Isla Gorgona</option> 
+        </select> 
+    </div> 
+<div class="campo"> 
+        <label for="mensaje">Mensaje</label> 
+        <textarea id="mensaje" name="mensaje" rows="4" 
+                placeholder="Cuéntanos tus fechas y número de viajeros..."> 
+        </textarea> 
+    </div> 
+    <button type="submit" class="btn-primario">Enviar consulta</button> 
+    </form> 
+</section> 
+<!-- PIE DE PÁGINA --> 
+<footer id="pie"> 
+    <div class="pie-columnas"> 
+
+    <div class="pie-col"> 
+        <p class="pie-marca">🗺️ Descubre el Cauca</p> 
+        <p>Promoviendo el turismo sostenible en el suroccidente colombiano.</p> 
+    </div> 
+ 
+    <div class="pie-col"> 
+        <h4>Destinos</h4> 
+        <ul> 
+        <li><a href="#destinos">Popayán</a></li> 
+        <li><a href="#destinos">San Agustín</a></li> 
+        <li><a href="#destinos">Isla Gorgona</a></li> 
+        </ul> 
+    </div> 
+
+    <div class="pie-col"> 
+        <h4>Contacto</h4> 
+        <ul> 
+        <li>📍 Popayán, Cauca</li> 
+        <li>📞 (602) 820 0000</li> 
+        <li>✉️ info@descubreelcauca.co</li> 
+        </ul> 
+    </div> 
+
+    </div> 
+    <div class="pie-fondo"> 
+    <p>© 2025 Descubre el Cauca — Ejercicio CSS3 · SENA CTPI</p> 
+    </div> 
+</footer> 
+
+</body> 
+</html> 

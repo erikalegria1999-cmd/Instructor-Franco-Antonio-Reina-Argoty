@@ -1,0 +1,116 @@
+/* Css CCascading style sheet 
+hoja de estilo en cascada */
+
+/* selector universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Monserrat",sams-serif;
+    margin: 100px;  /* px es pixel unidad de medida web*/
+}
+a{
+    background-color: #5f614c;
+    color: white;
+    width: 200px;
+    height: 100px ;
+    align-content: center;
+    margin-bottom: 100px;    
+}
+/*pseudoclases*/
+a:hover{
+    background-color: white;
+    color: #e74c3c;
+}
+imput:focus{
+    border-color: cornflowerblue;
+}
+a:first-child{
+    font-weight: bold;
+}
+p{
+    color: red;
+    text-align: center;
+
+}
+
+h1{
+    background-color: rgba(28, 68, 128, 0.269);
+    color:  #1672cd; /* numero hexadecimal */
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.destacado_p{
+    /* selectores de clase en css .nombre y en html class =""*/
+    background-color: aquamarine;
+    color: gray;
+}
+.btn_principal{
+    background-color: #e74c3c;
+    color: white;
+    width: 100px;
+    height: 40px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+    border-radius: 20px 0 10px 0;
+    box-shadow: 0 6px 12px rgba(235, 6, 6, 0.872);
+}
+
+/*Selector de ID*/
+#btn_secundario{
+    background-color: yellow;
+    width: 100px;
+    height: 40px;
+    align-content: center;
+}
+#btn_tres{
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    align-content: center;
+}
+/* Selectores combinados*/
+.articulo p{
+    font-family:Cambria, Cochin, Georgia, Times, 
+    'Times New Roman', serif;
+    margin: 10px;
+    line-height: 1.8;
+    text-align: left;
+}
+.art_p{
+    color:  dimgray;
+    font-size: 1rem;
+    font-weight: 100;
+    font-weight: bold; /* grososr de la letra*/
+    font-style: italic; /*estilo de letra*/
+    line-height: 1.5; /**/
+    text-decoration: underline; /*subrayar*/
+    text-align: center; /*justify right*/
+}
+/* Selectores de hijo directo*/
+ul> li{
+    list-style: none;
+}
+/*Multiples selectores*/
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*fondos y bordes*/
+.fonde_color{
+    background-color: #f8f9;
+    background-image: url("https://picsum.photos/330/200");
+    height:200px;
+    height:200px;
+    width:300px;
+    margin:2px;
+    background-size: cover; /* cubrir toda el area*/
+    background-size: contain; /*encaja la imagen recortada*/
+    background-position: center;
+    border: 2px solid white
+}
+
